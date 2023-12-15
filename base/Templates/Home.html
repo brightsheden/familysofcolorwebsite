@@ -1,0 +1,366 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Family's Of Color</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+        <link rel="apple-touch-icon" sizes="180x180" href=" {% static 'image/favicon_io/apple-touch-icon.png' %}   ">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'image/favicon_io /favicon-32x32.png' %}   ">
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'image/favicon_io /favicon-16x16.png' %}    ">
+        <link rel="manifest" href="/site.webmanifest">
+        
+    </head>
+
+    <style>
+        /* Add some initial styling to the divs */
+        .slide-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        /* Add a class to trigger the slide-in animation */
+        .slide-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <body>
+
+        {% include "Navbar.html" %}
+
+        <section>
+            <section class="bg-cover bg-center bg-no-repeat bg-[url('{% static 'images/logo.jpg' %}')] bg-gray-700 bg-blend-multiply ">
+                <div class="px-4 mx-auto max-w-screen-xl text-center space-y-8 py-24 lg:py-56 ">
+                  <div class="flex justify-center ">
+                    <h2 class='text-white mb-5 text-5xl md:text-[100px] font-medium md:font-[600]  '>Family Of Color</h2>
+              
+                  </div>
+              
+                  <div class='text-white text-sm font-medium md:text-[28px] leading-normal   md:font-[300] '>
+                    <span>Join us in our mission to create a hunger-free and poverty-free community. You can contribute by volunteering, making donations, or participating in our events. Every effort counts! </span>
+                  </div>
+              
+                  <div >
+                    <button  class='p-2 text-white bg-[#ba7264] rounded-full px-[43px] py-[10px] text-2xl font-[600] leading-[29.05px] '>Donate</button>
+              
+                  <div>
+              
+                  
+              
+                    <div class='text-white text-base font-medium md:text-[24px] md:font-[400] mt-5 md:leading-[29.05px]'>
+                      <span> Igniting Hope, Nourishing Lives</span>
+                      
+              
+                    </div>
+                  
+                  
+                </div>
+              </section>
+              
+        </section>
+
+        <section id='aboutus' class='flex flex-col md:flex-row bg-[#ba7264] text-white p-6'>
+
+            <div class='mt-8 text-center w-[100%] md:w-[60%] gap-4'>
+                <h1 class='text-5xl mb-5 font-bold'>About Us</h1>
+                <p class='text-2xl p-2'>
+                    Family's of Color is Non-Profit organization which was founded by Rhonda Kirksey in 2006 with the sole aim of giving back to the Community.inother to Achieve our Aim,we have partnered with the Food bank in providing for foods for our community
+                    </p>
+            </div>
+            <div class='w/2'> 
+
+                <img src="{% static '/images/ngoimage1.jpg' %}"/>
+
+
+            </div>
+        </section  >
+     
+        <section class='bg-black text-white my-8'>
+            <div class='bg-[#351e1a] gap-4 container mx-auto flex flex-col md:flex-row'>
+                <div class='text-center mt-5 md:mt-[100px] space-y-5 '>
+                    <h1 class='text-5xl font-bold'>Our Mission</h1>
+                    <p>At <span class='font-medium'> Family of Color</span>, we embark on a heartfelt journey to eradicate hunger and poverty, infusing every action with compassion and commitment.</p>
+    
+                </div>
+
+                <div>
+                    <img src="{% static '/images/ngoimage2.jpg' %}"/>
+                </div>
+
+                <div class='text-center mt-5 md:mt-[100px] space-y-5 '>
+                    <h1 class='text-5xl font-bold'>Our Vision</h1>
+                    <p>A world where no one goes to bed hungry, where communities thrive, and individuals are empowered to sculpt their destinies.</p>
+    
+                </div>
+
+                
+    
+    
+            </div>
+    
+
+
+        </section>
+              
+     
+
+        <section class='container mx-auto p-4 space-y-4 slide-in'>
+            <div class='text-center'>
+                <h1 class='text-5xl font-bold'>What We Offer</h1>
+            </div>
+        
+            <div class='flex md:flex-row flex-col gap-4'>
+        
+                <div class='p-4 border-2 border-[#351e1a] hover:shadow-lg  w-full md:w-1/2 lg:w-1/3'>
+                    <div class='h-64'>
+                        <img class='rounded-md object-cover w-full h-full' src="https://img.freepik.com/free-photo/side-view-smiley-people-with-delicious-food_23-2149603462.jpg?w=740&t=st=1702571259~exp=1702571859~hmac=9e6b850dff292f5427704a77ef6cff1d0d1d6e7d8af8c30b4f6b4a8feeca619c" />
+                    </div>
+                    <div class='mt-4'>
+                        <h1 class='text-[#643f38] font-bold text-xl'>Beyond Food</h1>
+                        <p class='text-sm text-gray-500 mt-2 font-medium'>We're not just about food donations; we're about creating a symphony of support that echoes through the lives of those we touch.</p>
+                    </div>
+                </div>
+        
+                <div class='p-4 border-2 border-[#351e1a]  hover:shadow-md w-full md:w-1/2 lg:w-1/3'>
+                    <div class='h-64'>
+                        <img class='rounded-md object-cover w-full h-full' src="https://img.freepik.com/free-photo/front-view-male-flight-attendant-holding-plane_23-2150312700.jpg?w=360&t=st=1702571925~exp=1702572525~hmac=f76b7fd34a0a92a250496cbb09c3cc833cbb1e6e58a10341d0004f4533a84058" />
+                    </div>
+                    <div class='mt-4'>
+                        <h1 class='text-[#643f38] font-bold text-xl'>Creative Advocacy</h1>
+                        <p class='text-sm text-gray-500 mt-2 font-medium'>Our advocacy isn't just a call to action; it's a canvas where we paint the picture of change, stirring hearts and minds.</p>
+                    </div>
+                </div>
+
+                <div class='p-4 border-2 border-[#351e1a]  hover:shadow-md w-full md:w-1/2 lg:w-1/3'>
+                    <div class='h-64'>
+                        <img class='rounded-md object-cover w-full h-full' src="https://img.freepik.com/free-photo/hand-with-loudspeaker-megaphone-with-lightnings_107791-17382.jpg?w=740&t=st=1702574066~exp=1702574666~hmac=99f5cdad78dc7aa73457c126aa90e5b75131b1e491876609420b11bd37fb8947" />
+                    </div>
+                    <div>
+                        <h1 class='text-[#643f38] font-bold text-xl'>Raising Voices, Not Just Awareness</h1>
+                        <p class='text-sm text-gray-500 mt-2 font-medium'>We don't just raise awareness; we amplify voices, telling stories that spark conversations and inspire transformation.</p>
+                    </div>
+
+                </div>
+
+
+                
+                <div class='p-4 border-2 border-[#351e1a]  hover:shadow-md w-full md:w-1/2 lg:w-1/3'>
+                    <div class='h-64'>
+                        <img class='rounded-md object-cover w-full h-full' src="https://img.freepik.com/free-photo/man-innovating-wind-energy-virtual-reality-world_23-2148820139.jpg?w=740&t=st=1702574315~exp=1702574915~hmac=d0c80e0fbcefc9089774e681a0d228564f3ade8925e06578098592f4fc6cf362" />
+                    </div>
+                    <div>
+                        <h1 class='text-[#643f38] font-bold text-xl'>Inspiration, Not Just Information</h1>
+                        <p class='text-sm text-gray-500 mt-2 font-medium'>Beyond information, we provide inspiration, lighting the torch for individuals to take charge of their own narratives.</p>
+                    </div>
+
+                </div>
+
+                <div class='p-4 border-2 border-[#351e1a]  hover:shadow-md w-full md:w-1/2 lg:w-1/3'>
+                    <div class='h-64'>
+                        <img class='rounded-md object-cover w-full h-full' src="https://img.freepik.com/free-photo/people-office-during-work-day_23-2150690154.jpg?w=740&t=st=1702575519~exp=1702576119~hmac=82dceb93ec36b11c807c968ecbc36b2e28962d824222524a4618651c378592e6" />
+                    </div>
+                    <div>
+                        <h1 class='text-[#643f38] font-bold text-xl'>Communities as Canvases</h1>
+                        <p class='text-sm text-gray-500 mt-2 font-medium'>We believe in artistry beyond brick and mortar. We paint our communities with resilience, turning them into masterpieces of empowerment.</p>
+                    </div>
+
+                </div>
+
+        
+                <!-- Repeat the structure for other cards -->
+        
+            </div>
+        </section>
+
+
+        <section class="bg-[#351e1a] text-white py-16">
+            <div class="max-w-screen-lg mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8">Join Our Movement</h2>
+        
+                <div class="flex flex-col md:flex-row md:space-x-8">
+        
+                    <div class="flex-1 mb-8 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-4">Volunteer Harmony</h3>
+                        <p class="text-lg mb-4">
+                            Become a note in our symphony of change. Volunteer with us and witness the transformation your time can bring.
+                        </p>
+                    </div>
+        
+                    <div class="flex-1 mb-8 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-4">Contribute Melodies</h3>
+                        <p class="text-lg mb-4">
+                            Your donations compose the melody of hope. Every contribution creates a harmony that resonates through countless lives.
+                        </p>
+                    </div>
+        
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">Participate in the Dance</h3>
+                        <p class="text-lg mb-4">
+                            Join our events, the vibrant dances of change. Together, we create movements that reverberate far beyond the immediate steps.
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+
+        <section class='p-8 flex justify-center items-center bg-[#77463d]'>
+            <div class='flex gap-4 flex-col md:flex-row'>
+                <img class='rounded-md h-64' src='{% static "images/image.jpeg" %}'/>
+                <div class='text-center mt-5 md:mt-[100px]'>
+                    <blockquote class='text-2xl text-white font-semibold'> Pray in the rain and dance in the storm </blockquote >
+                </div>
+
+            </div>
+
+         
+
+           
+
+        </section>
+
+
+         <!-- Section for "OUR SPONSORS" -->
+    <section class="bg-white p-8 mt-4 text-center">
+        <h2 class="text-2xl font-bold mb-4">OUR SPONSORS</h2>
+        <p class="text-gray-700">Family’s of Color is a proud partner of the Food Bank.</p>
+    </section>
+
+    <!-- Section for "PRESIDENT AND HEAD OF THE ORGANIZATION" -->
+    <section class="bg-white p-8 mt-4 text-center">
+        <h2 class="text-2xl font-bold mb-4">PRESIDENT AND HEAD OF THE ORGANIZATION</h2>
+        <p class="text-gray-700">Rhonda Kirksey</p>
+    </section>
+
+
+
+
+        <section class="bg-[url('https://img.freepik.com/free-photo/beggars-sat-wrapped-cloths-eating-noodles_1150-22925.jpg?w=740&t=st=1702578986~exp=1702579586~hmac=278ba19ed491a2470636fcacfd3c22a4a0662cbc64a36125d0496fc947678e13')] bg-cover bg-center bg-blend-multiply bg-gray-500 text-white flex items-center py-16 ">
+            <div class="max-w-screen-lg mx-auto flex justify-between items-center">
+                <!-- Left Content: Contact Button -->
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+                    <p class="text-lg mb-8">Have questions? Reach out to us.</p>
+                    <a href="#contact-form" class="bg-white text-[#77463d] py-2 px-6 rounded-full text-lg hover:bg-gray-200 transition duration-300">Get in Touch</a>
+                </div>
+        
+                <!-- Right Content: Other Information -->
+                <div class="hidden md:block md:w-1/2">
+                    <!-- Add other content here -->
+                    <p class="text-lg">Join us in our mission to create a hunger-free and poverty-free community. You can contribute by volunteering, making donations, or participating in our events. Every effort counts!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="bg-gray-100 py-16">
+            <div class="max-w-screen-lg mx-auto flex justify-center items-center">
+                <form class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Get in Touch</h2>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#77463d] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+        
+
+
+        <footer class="bg-[#77463d] text-white py-8">
+            <div class="max-w-screen-lg mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">CONTACTS</h2>
+                <p class="text-lg mb-2">
+                    Tel: <a href="tel:+16123154697" class="text-white underline">612-315-4697</a>
+                </p>
+                <p class="text-lg mb-8">
+                    Email: <a href="mailto:Familysofcolor@gmail.com" class="text-white underline">Familysofcolor@gmail.com</a>
+                </p>
+        
+                <nav class="flex justify-center space-x-4">
+                    <a href="#" class="text-lg underline">Home</a>
+                    <a href="#" class="text-lg underline">About Us</a>
+                    <a href="#" class="text-lg underline">Contact</a>
+                </nav>
+        
+                <p class="text-lg mt-4">&copy; 2023 Family Of Color. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        
+        
+        
+
+      
+     
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/657b557407843602b802151a/1hhksbk59';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all elements with the class 'slide-in'
+            var slideInDivs = document.querySelectorAll('.slide-in');
+
+            // Function to check if an element is in the viewport
+            function isInViewport(element) {
+                var rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            // Function to handle the scroll event
+            function handleScroll() {
+                slideInDivs.forEach(function (div) {
+                    if (isInViewport(div)) {
+                        // Add a class to trigger the slide-in animation
+                        div.classList.add('active');
+                    }
+                });
+            }
+
+            // Attach the scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Trigger the initial check in case the elements are already in the viewport on page load
+            handleScroll();
+        });
+    </script>
+    <!--End of Tawk.to Script-->
+    </body>
+</html>
