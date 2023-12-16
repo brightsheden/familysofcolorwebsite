@@ -20,18 +20,6 @@
     </head>
 
     <style>
-        /* Add some initial styling to the divs */
-        .slide-in {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-        }
-
-        /* Add a class to trigger the slide-in animation */
-        .slide-in.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
     </style>
     <body>
 
@@ -41,7 +29,7 @@
             <section class="bg-cover bg-center bg-no-repeat bg-[url('{% static 'images/logo.jpg' %}')] bg-gray-700 bg-blend-multiply ">
                 <div class="px-4 mx-auto max-w-screen-xl text-center space-y-8 py-24 lg:py-56 ">
                   <div class="flex justify-center ">
-                    <h2 class='text-white mb-5 text-5xl md:text-[100px] font-medium md:font-[600]  '>Family Of Color</h2>
+                    <h2 class='text-white mb-5 text-5xl md:text-[100px] font-medium md:font-[600]  '>Family's Of Color</h2>
               
                   </div>
               
@@ -50,19 +38,14 @@
                   </div>
               
                   <div >
-                    <button  class='p-2 text-white bg-[#ba7264] rounded-full px-[43px] py-[10px] text-2xl font-[600] leading-[29.05px] '>Donate</button>
+                    <a href='#aboutus'><button  class='p-2 text-white bg-[#ba7264] rounded-full px-[43px] py-[10px] text-2xl font-[600] leading-[29.05px] '>Learn more</button></a>
+                    
               
                   <div>
-              
-                  
-              
+  
                     <div class='text-white text-base font-medium md:text-[24px] md:font-[400] mt-5 md:leading-[29.05px]'>
                       <span> Igniting Hope, Nourishing Lives</span>
-                      
-              
                     </div>
-                  
-                  
                 </div>
               </section>
               
@@ -88,7 +71,7 @@
             <div class='bg-[#351e1a] gap-4 container mx-auto flex flex-col md:flex-row'>
                 <div class='text-center mt-5 md:mt-[100px] space-y-5 '>
                     <h1 class='text-5xl font-bold'>Our Mission</h1>
-                    <p>At <span class='font-medium'> Family of Color</span>, we embark on a heartfelt journey to eradicate hunger and poverty, infusing every action with compassion and commitment.</p>
+                    <p>At <span class='font-medium'> Family's of color</span>, we embark on a heartfelt journey to eradicate hunger and poverty, infusing every action with compassion and commitment.</p>
     
                 </div>
 
@@ -101,19 +84,9 @@
                     <p>A world where no one goes to bed hungry, where communities thrive, and individuals are empowered to sculpt their destinies.</p>
     
                 </div>
-
-                
-    
-    
             </div>
-    
-
-
         </section>
-              
-     
-
-        <section class='container mx-auto p-4 space-y-4 slide-in'>
+        <section class='container mx-auto p-4 space-y-4 '>
             <div class='text-center'>
                 <h1 class='text-5xl font-bold'>What We Offer</h1>
             </div>
@@ -182,6 +155,28 @@
         </section>
 
 
+           <!-- Donate Section -->
+    <section class="container mx-auto py-16">
+        <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+            <!-- Donation Text -->
+            <div class="md:w-1/2 text-center">
+                <h2 class="text-4xl font-bold mb-4">Join Us in the Fight Against Hunger</h2>
+                <p class="text-lg">Your contribution can make a significant impact on the lives of those struggling with hunger. Together, let's create a world where no one sleeps hungry.</p>
+            </div>
+
+            <!-- Donation Image -->
+            <div class="md:w-1/2">
+                <img src="https://img.freepik.com/free-photo/smiley-volunteers-preparing-food-box-donation_23-2148732650.jpg?w=900&t=st=1702746617~exp=1702747217~hmac=a9bf09645743fd9ce0baac636eeefdbee03c1b22e991340d3077e718cdf3adbf" alt="NGO Donation Image" class="rounded-lg shadow-md">
+            </div>
+        </div>
+
+        <!-- Donate Button -->
+        <div class="flex justify-center mt-8">
+            <a href="#" class="bg-[#ba7264] hover:bg-[#77463d] text-white py-3 px-6 rounded-full text-lg font-semibold transition duration-300">Donate Now</a>
+        </div>
+    </section>
+
+
         <section class="bg-[#351e1a] text-white py-16">
             <div class="max-w-screen-lg mx-auto text-center">
                 <h2 class="text-4xl font-bold mb-8">Join Our Movement</h2>
@@ -212,22 +207,32 @@
                 </div>
             </div>
         </section>
-
-
         <section class='p-8 flex justify-center items-center bg-[#77463d]'>
             <div class='flex gap-4 flex-col md:flex-row'>
-                <img class='rounded-md h-64' src='{% static "images/image.jpeg" %}'/>
+                <img class='rounded-lg md:h-64' src='{% static "images/pray.jpeg" %}'/>
                 <div class='text-center mt-5 md:mt-[100px]'>
-                    <blockquote class='text-2xl text-white font-semibold'> Pray in the rain and dance in the storm </blockquote >
+                    <blockquote class='text-2xl text-white font-semibold'>&quot; Pray in the rain and dance in the storm &quot; </blockquote >
                 </div>
 
             </div>
-
-         
-
-           
-
         </section>
+
+     <!-- Donate Section -->
+     <section class="container mx-auto flex flex-col items-center justify-center h-screen">
+        <!-- Donation Text -->
+        <div class="text-center mb-8">
+            <h2 class="text-4xl font-bold mb-4">Help Us Fight Hunger</h2>
+            <p class="text-lg">Your support makes a significant impact. Join hands with us to ensure no one goes to bed hungry.</p>
+        </div>
+
+        <!-- Donate Button -->
+        <div class="mb-8">
+            <a href="#" class="bg-[#ba7264] hover:bg-[#77463d] text-white py-3 px-6 rounded-full text-lg font-semibold transition duration-300">Support Now</a>
+        </div>
+
+        <!-- Donation Image -->
+        <img src="https://img.freepik.com/free-photo/begging-bridge-with-person-who-handed-bread_1150-22948.jpg?w=740&t=st=1702747092~exp=1702747692~hmac=b59113177a5af4a8d82100bae8b3de56bd78460940130a7b4cb2059e4fda7586" alt="NGO Donation Image" class="rounded-lg shadow-md max-w-full h-auto">
+    </section>
 
 
          <!-- Section for "OUR SPONSORS" -->
@@ -241,9 +246,6 @@
         <h2 class="text-2xl font-bold mb-4">PRESIDENT AND HEAD OF THE ORGANIZATION</h2>
         <p class="text-gray-700">Rhonda Kirksey</p>
     </section>
-
-
-
 
         <section class="bg-[url('https://img.freepik.com/free-photo/beggars-sat-wrapped-cloths-eating-noodles_1150-22925.jpg?w=740&t=st=1702578986~exp=1702579586~hmac=278ba19ed491a2470636fcacfd3c22a4a0662cbc64a36125d0496fc947678e13')] bg-cover bg-center bg-blend-multiply bg-gray-500 text-white flex items-center py-16 ">
             <div class="max-w-screen-lg mx-auto flex justify-between items-center">
@@ -282,10 +284,6 @@
                 </form>
             </div>
         </section>
-        
-        
-
-
         <footer class="bg-[#77463d] text-white py-8">
             <div class="max-w-screen-lg mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-4">CONTACTS</h2>
@@ -302,18 +300,10 @@
                     <a href="#" class="text-lg underline">Contact</a>
                 </nav>
         
-                <p class="text-lg mt-4">&copy; 2023 Family Of Color. All rights reserved.</p>
+                <p class="text-lg mt-4">&copy; 2023 Family's of color. All rights reserved.</p>
             </div>
         </footer>
-        
-        
-        
-        
-
-      
-     
-
-        
+            
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
         <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -327,41 +317,5 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
-
-   
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all elements with the class 'slide-in'
-            var slideInDivs = document.querySelectorAll('.slide-in');
-
-            // Function to check if an element is in the viewport
-            function isInViewport(element) {
-                var rect = element.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                );
-            }
-
-            // Function to handle the scroll event
-            function handleScroll() {
-                slideInDivs.forEach(function (div) {
-                    if (isInViewport(div)) {
-                        // Add a class to trigger the slide-in animation
-                        div.classList.add('active');
-                    }
-                });
-            }
-
-            // Attach the scroll event listener
-            window.addEventListener('scroll', handleScroll);
-
-            // Trigger the initial check in case the elements are already in the viewport on page load
-            handleScroll();
-        });
-    </script>
-    <!--End of Tawk.to Script-->
     </body>
 </html>
